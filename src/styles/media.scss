@@ -1,0 +1,197 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1410px
+@include media-breakpoint-down(lg) {
+	.header_logo {
+		display: none;
+	}
+	.news_over:after {
+		background: linear-gradient(to top, #fff, #fff 30%, rgba(255,255,255,.8) 40%, transparent);
+	}
+	.search_tabs {
+		margin-bottom: 20px;
+	}
+	.search_tab {
+		display: block;
+	}
+	.club-info {
+		padding: 5px;
+	}
+	.search_inp-cont {
+		margin-bottom: 20px;
+	}
+	.search_list {
+		margin-bottom: 20px;
+	}
+	.all-points {
+		margin-bottom: 10px;
+	}
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.search-icon {
+		height: 50px;
+		border: 1px solid #0a274c;
+		margin-left: 70px;
+	}
+	.icon-group {
+		margin-bottom: 5px;
+	}
+	.all-points--hide {
+		display: none;
+	}
+	.all-points--mobile {
+		display: block;
+		margin-bottom: 50px;
+	}
+	.liders_list {
+		margin-bottom: 20px;
+	}
+	.liders_row-center {
+		margin-bottom: 20px;
+	}
+	.club-info {
+		border-right: 0;
+		border-bottom: 1px solid #c7ccd3;
+		padding-left: 35px;
+	}
+	.club_row {
+		margin-bottom: 50px;
+	}
+	.search_tab {
+		display: inline-block;
+	}
+	.search {
+		padding-left: 35px;
+		margin-bottom: 50px;
+	}
+	.association_logo {
+		max-width: 200px;
+		margin-bottom: 30px;
+	}
+	.table-form_select-cont {
+		margin-bottom: 10px;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.header_center {
+		text-align: right;
+	}
+	.menu {
+		display: none;
+	}
+	.hamburger {
+		display: inline-block;
+	}
+	.social_list {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.mm-menu_offcanvas.mm-menu_opened {
+		z-index: 99;
+	}
+	.mm-menu {
+		background: $grey;
+		color: #fff;
+	}
+	.menu_item {
+		&:hover {
+			background-color: inherit;
+		}
+	}
+	.search-icon {
+		margin-right: 0;
+		margin-left: auto;
+		border-right: 0;
+		border-bottom: 0;
+	}
+	.counter {
+		margin-bottom: 10px;
+	}
+	.club_inner {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0,0);
+		padding: 10px;
+	}
+	.club_img {
+		margin-bottom: 10px;
+	}
+	.club_img-b {
+		margin-bottom: 10px;
+	}
+	.liders_item {
+		margin-bottom: 10px;
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.logo {
+		max-width: 100px;
+	}
+	html {
+		font-size: 8px;
+	}
+	.liders_img-cont {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.association {
+		padding: 30px 10px;
+	}
+	.club-info {
+		padding-left: 10px;
+	}
+	.search {
+		padding-left: 10px;
+	}
+	.liders {
+		padding: 0 10px;
+	}
+	.table_box-cont {
+		padding: 0 10px;
+	}
+	.table_cont {
+		padding: 35px 10px 20px 10px;
+	}
+	.partners {
+		padding: 50px 10px;
+	}
+	.club_control {
+		display: none;
+	}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1410px
+@include media-breakpoint-up(xl) {
+	
+}
